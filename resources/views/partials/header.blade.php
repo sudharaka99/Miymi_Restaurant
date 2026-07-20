@@ -52,12 +52,12 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link"
                                href="#gallery">
                                 Gallery
                             </a>
-                        </li>
+                        </li> --}}
 
                         <li class="nav-item">
                             <a class="nav-link"
@@ -71,28 +71,38 @@
                     <!-- Right Side Icons -->
                     <div class="user_option">
 
-                        <a href="#" class="cart_link"
-                           title="Cart">
+                        <!-- Cart -->
+                        <a href="#" class="cart_link" title="Cart">
                             <i class="fa fa-shopping-cart"
-                               aria-hidden="true"></i>
+                            aria-hidden="true"></i>
                         </a>
 
+                        <!-- Phone -->
                         <a href="tel:0772226665"
-                           class="user_link"
-                           title="Call Us">
+                        class="user_link"
+                        title="Call Us">
                             <i class="fa fa-phone"
-                               aria-hidden="true"></i>
+                            aria-hidden="true"></i>
                         </a>
 
+                        <!-- Location -->
                         <a href="#"
-                           class="user_link"
-                           title="Location">
-                            <i class="fa fa-map-marker"></i>
+                        class="user_link"
+                        title="Location">
+                            <i class="fa fa-map-marker"
+                            aria-hidden="true"></i>
                         </a>
 
-                        <a href="#book"
-                           class="order_online">
-                            Book Table
+                        <!-- Sign Up -->
+                        <a href="{{ route('register') }}"
+                        class="order_online">
+                            Sign Up
+                        </a>
+
+                        <!-- Sign In -->
+                        <a href="{{ route('login') }}"
+                        class="signin_btn">
+                            Sign In
                         </a>
 
                     </div>
