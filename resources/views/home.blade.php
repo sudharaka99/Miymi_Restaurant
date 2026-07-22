@@ -5,6 +5,7 @@
 @section('keywords', 'Miyami, restaurant, good food, cuisine, dining')
 
 @section('content')
+    @include('sections.banner')
     @include('sections.offer')
     @include('sections.food')
     @include('sections.about')
